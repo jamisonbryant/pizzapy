@@ -25,7 +25,9 @@ band_ranges = [
 ]
 
 # Get worksheet difficulty
-difficulty = int(input('Difficulty (1 = easy, 2 = medium, 3 = hard, 4 = random): '))
+# Even though '4' is random difficulty, the difficulty doesn't change
+# from table to table. I got lazy and didn't implement that.
+difficulty = int(input('Difficulty (1: easy, 2: medium, 3: hard, 4: random): '))
 
 if difficulty is 1:
     entries_to_remove = 5
@@ -42,6 +44,9 @@ else:
 #print('Removing %d entries...' % entries_to_remove)
 
 # Get number of tables to generate
+# You can of course generate as many tables as your processor could handle, but
+# in order to keep the script runtime down and not kill the hard drive, the
+# number of tables is limited to 10. Feel free to change this if you want.
 tables_to_generate = int(input('Tables to generate (1-10): '))
 
 if tables_to_generate > 10:
