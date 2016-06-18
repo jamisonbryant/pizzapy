@@ -10,4 +10,4 @@ difficulty, plus the ability to generate up to 10 tables and either print the ta
 to the console or write them to a file.
 
 **Dependencies:**
- * tabular
+ * tabular (https://pypi.python.org/pypi/tabulate)
